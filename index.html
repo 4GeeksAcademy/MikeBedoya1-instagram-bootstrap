@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>INSTAGRAM</title>
 
 
@@ -19,215 +20,219 @@
 
 <body>
 
-  <div class="container-fluid text-center">
-    <div class="row align-items-start">
-      <div class="col">
+  <div class="container-fluid h-100 p-0">
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
-                class="fa-brands fa-instagram"></i>
-              Instagram</button>
-          </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex w-100">
 
+        <a class="navbar-brand" href="#">INSTAGRAM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-          <a class="nav-item" role="New post">
+            <li class="nav-item">
 
-            <div class="align-items-end-col-3">
-
-              <!-- Button trigger modal -->
               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Create a new post
               </button>
 
 
+            </li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                <li><a class="text-danger dropdown-item" href="#">Log out</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="col">
-            <div class="container col">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- contain buttons -->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-grip"></i></i></button>
+      </li>
 
 
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalsecondary">Create a new post</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-secondary">
-                            <font style="vertical-align: inherit;">
-                              <font style="vertical-align: inherit;">Caption:</font>
-                            </font>
-                          </label>
+      <!-- imagenes horizontales-->
 
-                        </div>
-                        <div class="mb-3">
-                          <label for="message-text" class="col-form-label">
-                            <font style="vertical-align: inherit;" </font>
-                              <font style="vertical-align: inherit;" </font>
-                          </label>
-                          <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">publish</button>
-                    </div>
-                  </div>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-grip-vertical"></i></i></button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+
+
+
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img
+                  src="https://content.nationalgeographic.com.es/medio/2022/12/12/perro-1_514aad3b_221212161023_1280x720.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15665/production/_107435678_perro1.jpg.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+
+
                 </div>
               </div>
 
 
             </div>
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img
+                  src="https://www.clikisalud.net/wp-content/uploads/2020/11/importancia-encontrarle-significado-vida.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
 
 
-
-
-          </div>
-          <div class="col">
-            </a>
-            <li class="nav-item col-2" role="dropdown">
-              <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <!-- rueda del dropdown -->
-                  <i class="fa-solid fa-gear"></i>
-
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                  <li><a class="dropdown-item-danger" href="#">Log out</a></li>
-                </ul>
+                </div>
               </div>
-            </li>
 
+            </div>
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img
+                  src="https://cdn.valenciaplaza.com/public/Image/2024/7/s_el_delantero_del_levante_y_del_real_madrid_dani_gmez_est_un_verano_ms_en_la_lista_del_elche_Multimedia-ampliada.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img
+                  src="https://s2.ppllstatics.com/diariovasco/www/multimedia/2024/07/21/96474141-kE8H--562x393@Diario%20Vasco.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+
+              <div class="object-fit-cover border rounded w-100" >
+                <img src="https://www.diariodeburgos.es/media/IMG/2024/2CD7B45C-B55B-9022-23A706544A8A83AE.JPEG"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+
+
+                </div>
+              </div>
+
+
+
+            </div>
           </div>
+        </div>
+
       </div>
+    
+
+      <!-- imagenes verticales -->
+      <div class="d-flex justify-content-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="object-fit-cover border rounded w-50" >
+          <img src="https://www.diariodeburgos.es/media/IMG/2024/2CD7B45C-B55B-9022-23A706544A8A83AE.JPEG"
+            class="card-img-top" alt="...">
+          <div class="card">
+
+      </div>
+
     </div>
 
 
 
 
 
-
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        ...</div>
-      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
-      </div>
-      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
-      </div>
-      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...
-      </div>
-      </div>
+  </div>
 
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalsecondary">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-secondary">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Caption:</font>
+                </font>
+              </label>
+
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">
+                <font style="vertical-align: inherit;" </font>
+                  <font style="vertical-align: inherit;" </font>
+              </label>
+
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">publish</button>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 
-</div>
 
-<!-- imagenes -->
-
-
-
-<div class="container text-center ">
-  <div class="row">
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://content.nationalgeographic.com.es/medio/2022/12/12/perro-1_514aad3b_221212161023_1280x720.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          
-        </div>
-      </div>
-     
-    </div>
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15665/production/_107435678_perro1.jpg.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          
-          
-        </div>
-      </div>
-
-
-    </div>
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://www.clikisalud.net/wp-content/uploads/2020/11/importancia-encontrarle-significado-vida.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          
-          
-        </div>
-      </div>
-
-    </div>
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://cdn.valenciaplaza.com/public/Image/2024/7/s_el_delantero_del_levante_y_del_real_madrid_dani_gmez_est_un_verano_ms_en_la_lista_del_elche_Multimedia-ampliada.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-         
-          
-        </div>
-      </div>
-
-    </div>
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://s2.ppllstatics.com/diariovasco/www/multimedia/2024/07/21/96474141-kE8H--562x393@Diario%20Vasco.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-
-      <div class="object-fit-contain border rounded" style="width: 18rem;">
-        <img src="https://www.diariodeburgos.es/media/IMG/2024/2CD7B45C-B55B-9022-23A706544A8A83AE.JPEG" class="card-img-top" alt="...">
-        <div class="card-body">
-          
-          
-        </div>
-      </div>
-
-
-
-    </div>
   </div>
-</div>
-
-</div>
 
 
 
 
 
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
